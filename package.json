@@ -1,0 +1,35 @@
+{
+  "name": "lucky-wheel-game",
+  "version": "1.0.0",
+  "description": "幸運轉盤遊戲",
+  "author": "david.jian",
+  "license": "MIT",
+  "homepage": "http://192.168.11.250:10080/re-activity-package/luck-wheel-game",
+  "source": "src/index",
+  "scripts": {
+    "clean": "rm -rf build",
+    "init": "mkdir build",
+    "build-parcel": "parcel build src/index.html --out-dir=build --public-url https://cdn.jsdelivr.net/gh/clipwww/lucky-wheel-game@gh-pages/",
+    "prebuild": "npm run clean && npm run init",
+    "build": "npm run build-parcel",
+    "dev": "parcel src/index.html --out-dir=build",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.11.250:10080/re-activity-package/luck-wheel-game.git"
+  },
+  "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "sass": "^1.43.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "vue": "^3.2.20"
+  }
+}

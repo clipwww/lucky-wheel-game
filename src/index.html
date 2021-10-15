@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Wheel Game</title>
+  <link rel="stylesheet" href="./index.scss">
+
+</head>
+
+<body class="py-10 px-2">
+  <div id="app" class="spinner">
+    <div class="spinner__container">
+      <div class="spinner__wheel">
+        <div id="js-spinner" class="spinner__rotation is-rotate">
+          <!-- <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div>
+          <div class="spinner__piece"></div> -->
+
+        </div>
+        <div class="spinner__center"></div>
+      </div>
+    </div>
+
+
+    <div class="text-center sm:w-96 mx-auto">
+      <select class="border border-solid border-gray-500 my-6 w-full px-5 py-2" v-model="pieceLength">
+        <option v-for="n in 19" :value="n + 1">{{ n + 1 }}</option>
+      </select>
+      <button class="w-full block bg-green-400 text-white px-10 py-2 text-xl cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed" :disabled="isRotate" @click="startRotation">轉動</button>
+    </div>
+  </div>
+
+  <script src="./index.ts"></script>
+</body>
+
+</html>
