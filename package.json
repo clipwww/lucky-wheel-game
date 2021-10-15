@@ -4,7 +4,7 @@
   "description": "幸運轉盤遊戲",
   "author": "david.jian",
   "license": "MIT",
-  "homepage": "http://192.168.11.250:10080/re-activity-package/luck-wheel-game",
+  "homepage": "http://192.168.11.250:10080/re-activity-package/lucky-wheel-game",
   "source": "src/index",
   "scripts": {
     "clean": "rm -rf build",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://192.168.11.250:10080/re-activity-package/luck-wheel-game.git"
+    "url": "http://192.168.11.250:10080/re-activity-package/lucky-wheel-game.git"
   },
   "devDependencies": {
     "@types/vue": "^2.0.0",
